@@ -1,0 +1,44 @@
+{
+  "streams": [
+    {
+      "userDetails": {
+        "userId": "113910251268173315355",
+        "userName": "Rahul Singh",
+        "imageURL": "https://lh3.googleusercontent.com/a-/AOh14GgmBz-MK-yrv19fjMQ0Es9ld9SzXw1p3DtBceaBJg=s96-c"
+      },
+      "title": "Title 1",
+      "description": "Description 1",
+      "id": 1
+    },
+    {
+      "userDetails": {
+        "userId": "113910251268173315355",
+        "userName": "Rahul Singh",
+        "imageURL": "https://lh3.googleusercontent.com/a-/AOh14GgmBz-MK-yrv19fjMQ0Es9ld9SzXw1p3DtBceaBJg=s96-c"
+      },
+      "title": "Title 2",
+      "description": "Description 2",
+      "id": 2
+    },
+    {
+      "userDetails": {
+        "userId": "173910251268173315355",
+        "userName": "Rahul Singh",
+        "imageURL": "https://lh3.googleusercontent.com/a-/AOh14GgmBz-MK-yrv19fjMQ0Es9ld9SzXw1p3DtBceaBJg=s96-c"
+      },
+      "title": "Title 3",
+      "description": "Description 3",
+      "id": 3
+    },
+    {
+      "userDetails": {
+        "userId": "113910251268173315355",
+        "userName": "Rahul Singh",
+        "imageURL": "https://lh3.googleusercontent.com/a-/AOh14GgmBz-MK-yrv19fjMQ0Es9ld9SzXw1p3DtBceaBJg=s96-c"
+      },
+      "title": "Title 4",
+      "description": "Description 4",
+      "id": 4
+    }
+  ]
+}
