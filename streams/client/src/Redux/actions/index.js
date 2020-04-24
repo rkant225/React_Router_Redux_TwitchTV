@@ -1,5 +1,6 @@
 import {GoogleOAuthActionType, StreamsActionType} from './ActionTypes'
 import axios from 'axios';
+import history from '../../Router/history';
 
 // GoogleOAuth Actions
 export const SignIn =(userDetails) =>{
@@ -22,12 +23,12 @@ export const StartOAuth = () =>{
 }
 
 
-//  StreamActions
-
+//  Stream sActions
 export const createStream = (formData) =>{
     return async (dispatch) =>{
         let response = await axios.post('http://localhost:3001/streams', formData);
         dispatch({type : StreamsActionType.CREATE_STREAM , payload : response.data })
+        history.push('/');
     }
 }
 
@@ -47,8 +48,9 @@ export const featchStream = (id) =>{
 
 export const editStream = (id,formData) =>{
     return async (dispatch) =>{
-        let response = await axios.put(`http://localhost:3001/streams/${id}`, formData);
-        dispatch({type : StreamsActionType.EDIT_STREAM , payload : response.data })
+        let response = await axios.patch(`http://localhost:3001/streams/${id}`, formData);
+        dispatch({type : StreamsActionType.EDIT_STREAM , payload : response.data });
+        history.push('/');
     }
 }
 

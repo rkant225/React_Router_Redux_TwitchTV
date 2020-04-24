@@ -9,7 +9,6 @@ class StreamList extends React.Component{
     }
 
     render(){
-        {console.log(this.props)}
         return(
             <div className="ui celled list">
                 <h2>Streams</h2>
@@ -17,7 +16,7 @@ class StreamList extends React.Component{
                     return(
                         <div className="item" key={stream.id}>
                             {this.props.isLoggedIn && stream.userDetails.userId === this.props.currentUserId && <div className="right floated content">
-                                <button className="ui button green"><Link to="/streams/edit">Edit</Link></button>
+                                <Link to={`/streams/edit/${stream.id}`} className="ui button green">Edit</Link>
                                 <button className="ui button red" onClick={() => this.props.deleteStream(stream.id)}>Delete</button>
                             </div>}
                             <i className="large middle aligned icon camera"/>
