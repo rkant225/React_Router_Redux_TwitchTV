@@ -58,5 +58,6 @@ export const deleteStream = (id) =>{
     return async (dispatch) =>{
         let response = await axios.delete(`http://localhost:3001/streams/${id}`);
         dispatch({type : StreamsActionType.DELETE_STREAM , payload : id })
+        history.push('/');
     }
 }

@@ -17,7 +17,7 @@ class StreamList extends React.Component{
                         <div className="item" key={stream.id}>
                             {this.props.isLoggedIn && stream.userDetails.userId === this.props.currentUserId && <div className="right floated content">
                                 <Link to={`/streams/edit/${stream.id}`} className="ui button green">Edit</Link>
-                                <button className="ui button red" onClick={() => this.props.deleteStream(stream.id)}>Delete</button>
+                                <Link to={`/streams/delete/${stream.id}`} className="ui button red">Delete</Link>
                             </div>}
                             <i className="large middle aligned icon camera"/>
                             <div className="content">
